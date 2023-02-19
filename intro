@@ -1,0 +1,13 @@
+node_modules is where all project dependencies live, including react library
+public is all the files that are public to the browser, all the react component(e.g. App.js) will be injected to index.html file under <div id='root'>, 
+src has all react components, app.js is a sample component, index.js is what kick starts our app, it will take <App /> component and render it inside document.getElementById('root')
+
+
+index.js -> app.js -> (navbar.js & home.js & create.js & BlogDetails.js)
+                                    |
+                                bloglist.js
+                                    |
+                                BlogDetails.js
+
+npx json-server --watch data/db.json --port 8000
+npm run start
